@@ -5,9 +5,8 @@ import {Quicksand} from 'next/font/google';
 
 import RevealProvider from '@/providers/reveal.provider';
 
-import 'reveal.js/dist/reveal.css';
-import 'reveal.js/dist/theme/serif.css';
 import './globals.scss';
+import './reveal.css';
 
 const quicksand = Quicksand({subsets: ['latin'], variable: '--font-quicksand'});
 
