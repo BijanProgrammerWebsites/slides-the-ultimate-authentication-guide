@@ -1,5 +1,9 @@
 import {ReactElement} from 'react';
 
 export default function Home(): ReactElement {
-    return <h1>Hello, friend!</h1>;
+    return (
+        <section>
+            <h1>Hello, friend!</h1>
+        </section>
+    );
 }
