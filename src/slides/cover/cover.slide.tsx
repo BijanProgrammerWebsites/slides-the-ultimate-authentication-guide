@@ -4,7 +4,7 @@ import qrCodeImage from '@/assets/images/qr-code.svg';
 
 import styles from './cover.module.scss';
 
-export type Props = {
+type Props = {
     heading: string;
     basePath: string;
 };
