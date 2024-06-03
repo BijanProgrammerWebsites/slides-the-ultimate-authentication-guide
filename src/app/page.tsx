@@ -1,9 +1,11 @@
 import {ReactElement} from 'react';
 
+import CoverSlide from '@/slides/cover/cover.slide';
+
 export default function Home(): ReactElement {
     return (
-        <section>
-            <h1>Hello, friend!</h1>
-        </section>
+        <>
+            <CoverSlide heading="The Ultimate Authentication Guide" basePath="/tuag" />
+        </>
     );
 }
