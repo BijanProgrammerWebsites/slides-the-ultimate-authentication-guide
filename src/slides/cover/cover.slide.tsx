@@ -11,7 +11,7 @@ type Props = {
 
 export default function CoverSlide({heading, basePath}: Props): ReactElement {
     return (
-        <section className={styles.cover}>
+        <section>
             <div>
                 <h1>{heading}</h1>
                 <div>

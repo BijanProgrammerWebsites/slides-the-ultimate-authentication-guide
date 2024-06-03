@@ -8,12 +8,12 @@ type Props = {
 
 export default function TableOfContentsSlide({contents}: Props): ReactElement {
     return (
-        <section className={styles['table-of-contents']}>
+        <section>
             <header>
                 <h2>Table of Contents</h2>
             </header>
             <main className="r-stretch">
-                <ul>
+                <ul className={styles['table-of-contents']}>
                     {contents.map((content, index) => (
                         <li key={index}>{content}</li>
                     ))}
