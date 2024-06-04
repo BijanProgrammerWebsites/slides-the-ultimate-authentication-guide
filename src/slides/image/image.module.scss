@@ -1,0 +1,16 @@
+.figure {
+    display: grid;
+    grid-template-rows: auto minmax(0, 1fr);
+    place-items: center;
+
+    block-size: inherit;
+
+    figcaption {
+        white-space: pre-line;
+    }
+
+    img {
+        max-block-size: 90%;
+        max-inline-size: 90%;
+    }
+}
