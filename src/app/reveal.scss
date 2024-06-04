@@ -1,7 +1,7 @@
+@layer reveal-core, reveal-theme, reveal-reset;
+
 @import "reveal.js/dist/reveal.css" layer(reveal-core);
 @import "reveal.js/dist/theme/serif.css" layer(reveal-theme);
-
-@layer reveal-core, reveal-theme, reveal-reset;
 
 @layer reveal-reset {
     html,
