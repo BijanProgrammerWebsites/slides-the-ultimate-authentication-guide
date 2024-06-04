@@ -1,5 +1,7 @@
 import {ReactElement} from 'react';
 
+import BaseSlide, {BaseSlideProps} from '@/slides/base/base.slide';
+
 import styles from './versus.module.scss';
 
 type Column = {
@@ -8,28 +10,22 @@ type Column = {
     description: string;
 };
 
-type Props = {
-    heading: string;
+type Props = BaseSlideProps & {
     columns: [Column, Column];
 };
 
-export default function VersusSlide({heading, columns}: Props): ReactElement {
+export default function VersusSlide({columns, ...baseSlideProps}: Props): ReactElement {
     return (
-        <section>
-            <header>
-                <h2>{heading}</h2>
-            </header>
-            <main className="r-stretch">
-                <div className={styles.versus}>
-                    {columns.map((column, index) => (
-                        <div key={index} className="column">
-                            <div className="heading">{column.heading}</div>
-                            <img src={column.imageSrc} alt="" />
-                            <p>{column.description}</p>
-                        </div>
-                    ))}
-                </div>
-            </main>
-        </section>
+        <BaseSlide {...baseSlideProps}>
+            <div className={styles.versus}>
+                {columns.map((column, index) => (
+                    <div key={index} className="column">
+                        <div className="heading">{column.heading}</div>
+                        <img src={column.imageSrc} alt="" />
+                        <p>{column.description}</p>
+                    </div>
+                ))}
+            </div>
+        </BaseSlide>
     );
 }
