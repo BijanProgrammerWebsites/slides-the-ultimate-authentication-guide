@@ -8,6 +8,7 @@ import AuthenticationVsAuthorizationChapter from '@/chapter/authentication-vs-au
 import TypesOfAuthenticationChapter from '@/chapter/types-of-authentication/types-of-authentication.chapter';
 import RestfulAndHttpChapter from '@/chapter/restful-and-http/restful-and-http.chapter';
 import SignUpChapter from '@/chapter/sign-up/sign-up.chapter';
+import StoringUserDataChapter from '@/chapter/storing-user-data/storing-user-data.chapter';
 
 export default function Home(): ReactElement {
     return (
@@ -31,6 +32,7 @@ export default function Home(): ReactElement {
             <TypesOfAuthenticationChapter />
             <RestfulAndHttpChapter />
             <SignUpChapter />
+            <StoringUserDataChapter />
             <ClosingSlide />
         </>
     );
