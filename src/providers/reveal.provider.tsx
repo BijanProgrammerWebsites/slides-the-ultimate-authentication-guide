@@ -36,7 +36,7 @@ export default function RevealProvider({children}: Props): ReactElement {
                 hash: true,
                 rtl: false,
                 display: 'grid',
-                hideCursorTime: 1000,
+                hideInactiveCursor: false,
                 plugins: [ZoomPlugin],
                 margin: 0.1,
             });
