@@ -33,6 +33,7 @@ export default function Home(): ReactElement {
             <RestfulAndHttpChapter />
             <SignUpChapter />
             <StoringUserDataChapter />
+            {/* [BIJAN] TODO: Add cookies chapter. */}
             <ClosingSlide />
         </>
     );
