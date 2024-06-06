@@ -3,11 +3,15 @@
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
 
+    block-size: inherit;
+
     .column {
-        display: flex;
-        flex-direction: column;
+        display: grid;
+        grid-template-rows: auto minmax(0, 1fr) auto;
         align-items: center;
-        justify-content: center;
+        justify-items: center;
+
+        block-size: inherit;
 
         .heading {
             font-size: 2.4rem;
