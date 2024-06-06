@@ -2,6 +2,7 @@ import {ReactElement} from 'react';
 
 import CoverSlide from '@/slides/cover/cover.slide';
 import TableOfContentsSlide from '@/slides/table-of-contents/table-of-contents.slide';
+import ClosingSlide from '@/slides/closing/closing.slide';
 
 import AuthenticationVsAuthorizationChapter from '@/chapter/authentication-vs-authorization/authentication-vs-authorization.chapter';
 import TypesOfAuthenticationChapter from '@/chapter/types-of-authentication/types-of-authentication.chapter';
@@ -26,6 +27,7 @@ export default function Home(): ReactElement {
             />
             <AuthenticationVsAuthorizationChapter />
             <TypesOfAuthenticationChapter />
+            <ClosingSlide />
         </>
     );
 }
