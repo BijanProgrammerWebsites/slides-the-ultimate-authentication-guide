@@ -10,14 +10,18 @@ export default function RevealProvider({children}: Props): ReactElement {
     const containerRef = useRef<HTMLDivElement>(null);
     const revealRef = useRef<RevealType.Api | null>(null);
 
+    const isInitialized = useRef<boolean>(false);
+
     useEffect(() => {
-        if (revealRef.current) {
+        if (isInitialized.current) {
             return;
         }
 
+        isInitialized.current = true;
+
         const init = async (): Promise<void> => {
             const Reveal = (await import('reveal.js')).default;
-            const ZoomPlugin = (await import('reveal.js/plugin/zoom/zoom')).default;
+            const ZoomPlugin = (await import('reveal.js/plugin/zoom/zoom.esm')).default;
 
             revealRef.current = new Reveal(containerRef.current!, {});
 
