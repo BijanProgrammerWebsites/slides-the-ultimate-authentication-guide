@@ -9,6 +9,7 @@ import TypesOfAuthenticationChapter from '@/chapter/types-of-authentication/type
 import RestfulAndHttpChapter from '@/chapter/restful-and-http/restful-and-http.chapter';
 import SignUpChapter from '@/chapter/sign-up/sign-up.chapter';
 import StoringUserDataChapter from '@/chapter/storing-user-data/storing-user-data.chapter';
+import SignInChapter from '@/chapter/sign-in/sign-in.chapter';
 
 export default function Home(): ReactElement {
     return (
@@ -33,6 +34,7 @@ export default function Home(): ReactElement {
             <RestfulAndHttpChapter />
             <SignUpChapter />
             <StoringUserDataChapter />
+            <SignInChapter />
             {/* [BIJAN] TODO: Add cookies chapter. */}
             <ClosingSlide />
         </>
