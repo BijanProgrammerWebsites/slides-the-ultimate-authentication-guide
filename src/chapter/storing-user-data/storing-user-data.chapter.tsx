@@ -15,7 +15,7 @@ export default function StoringUserDataChapter(): ReactElement {
             <ImageSlide heading={heading} imageSrc={cookiesMessageImage.src} caption="Cookies Message" />
             <ImageSlide heading={heading} imageSrc={cookiesImage.src} caption="How Cookies Work?" />
             <ImageSlide heading={heading} imageSrc={cookiesVsSessionsVsLocalstorageImage.src} caption="" />
-            <ImageSlide heading={heading} imageSrc={rememberMeImage.src} caption="Using Cookies for Authentication" />
+            <ImageSlide heading={heading} imageSrc={rememberMeImage.src} caption="Remember Me" />
         </section>
     );
 }
