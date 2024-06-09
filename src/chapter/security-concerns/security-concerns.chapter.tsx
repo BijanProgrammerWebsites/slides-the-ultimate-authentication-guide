@@ -7,7 +7,7 @@ import recaptchaImage from '@/assets/images/security-concerns/recaptcha.webp';
 import routeGuardsImage from '@/assets/images/security-concerns/route-guards.webp';
 import tokenValidationImage from '@/assets/images/security-concerns/token-validation.webp';
 
-import ImageSlide from '@/slides/image/image.slide';
+import ImageSlide, {ImageSize} from '@/slides/image/image.slide';
 
 export default function SecurityConcernsChapter(): ReactElement {
     const heading = 'Security Concerns' as const;
@@ -24,6 +24,7 @@ export default function SecurityConcernsChapter(): ReactElement {
                 isAutoAnimated={true}
                 heading={heading}
                 imageSrc={routeGuardsImage.src}
+                imageSize={ImageSize.SMALL}
                 caption="Route Guards"
             />
             <ImageSlide
@@ -32,7 +33,13 @@ export default function SecurityConcernsChapter(): ReactElement {
                 imageSrc={lazyLoadRoutesImage.src}
                 caption="Lazy Load Routes"
             />
-            <ImageSlide isAutoAnimated={true} heading={heading} imageSrc={captchaImage.src} caption="CAPTCHA" />
+            <ImageSlide
+                isAutoAnimated={true}
+                heading={heading}
+                imageSrc={captchaImage.src}
+                imageSize={ImageSize.SMALL}
+                caption="CAPTCHA"
+            />
             <ImageSlide
                 isAutoAnimated={true}
                 heading={heading}

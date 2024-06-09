@@ -10,7 +10,7 @@ import serverAndClientImage from '@/assets/images/restful-and-http/server-and-cl
 import statefulImage from '@/assets/images/restful-and-http/stateful.webp';
 import statelessImage from '@/assets/images/restful-and-http/stateless.webp';
 
-import ImageSlide from '@/slides/image/image.slide';
+import ImageSlide, {ImageSize} from '@/slides/image/image.slide';
 import VersusSlide from '@/slides/versus/versus.slide';
 
 export default function RestfulAndHttpChapter(): ReactElement {
@@ -22,12 +22,14 @@ export default function RestfulAndHttpChapter(): ReactElement {
                 isAutoAnimated={true}
                 heading={heading}
                 imageSrc={serverAndClientImage.src}
+                imageSize={ImageSize.MEDIUM}
                 caption="Server & Client"
             />
             <ImageSlide
                 isAutoAnimated={true}
                 heading={heading}
                 imageSrc={requestAndResponseImage.src}
+                imageSize={ImageSize.MEDIUM}
                 caption="Request & Response"
             />
             <VersusSlide
@@ -63,6 +65,7 @@ export default function RestfulAndHttpChapter(): ReactElement {
                 isAutoAnimated={true}
                 heading={heading}
                 imageSrc={httpMethodsImage.src}
+                imageSize={ImageSize.SMALL}
                 caption="HTTP Methods"
             />
             <ImageSlide

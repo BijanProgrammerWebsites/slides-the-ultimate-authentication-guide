@@ -10,7 +10,18 @@
     }
 
     img {
-        max-block-size: 90%;
-        max-inline-size: 90%;
+        max-inline-size: 100%;
+
+        &.large {
+            max-block-size: 95%;
+        }
+
+        &.medium {
+            max-block-size: 24rem;
+        }
+
+        &.small {
+            max-block-size: 18rem;
+        }
     }
 }

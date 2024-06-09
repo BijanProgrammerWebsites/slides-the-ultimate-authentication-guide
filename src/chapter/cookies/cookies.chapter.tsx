@@ -10,7 +10,7 @@ import serverCookieImage from '@/assets/images/cookies/server-cookie.webp';
 import setCookieHeaderImage from '@/assets/images/cookies/set-cookie-header.webp';
 import xssImage from '@/assets/images/cookies/xss.webp';
 
-import ImageSlide from '@/slides/image/image.slide';
+import ImageSlide, {ImageSize} from '@/slides/image/image.slide';
 import VersusSlide from '@/slides/versus/versus.slide';
 
 export default function CookiesChapter(): ReactElement {
@@ -28,6 +28,7 @@ export default function CookiesChapter(): ReactElement {
                 isAutoAnimated={true}
                 heading={heading}
                 imageSrc={serverCookieImage.src}
+                imageSize={ImageSize.SMALL}
                 caption="Server Cookie"
             />
             <VersusSlide
