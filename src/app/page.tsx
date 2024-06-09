@@ -12,6 +12,7 @@ import StoringUserDataChapter from '@/chapter/storing-user-data/storing-user-dat
 import SignInChapter from '@/chapter/sign-in/sign-in.chapter';
 import SignOutChapter from '@/chapter/sign-out/sign-out.chapter';
 import SecurityConcernsChapter from '@/chapter/security-concerns/security-concerns.chapter';
+import CookiesChapter from '@/chapter/cookies/cookies.chapter';
 
 export default function Home(): ReactElement {
     return (
@@ -25,7 +26,6 @@ export default function Home(): ReactElement {
                     'Sign Up',
                     'Storing User Data',
                     'Cookies',
-                    'Using Cookies for Authentication',
                     'Sign In',
                     'Sign Out',
                     'Security Concerns',
@@ -36,7 +36,7 @@ export default function Home(): ReactElement {
             <RestfulAndHttpChapter />
             <SignUpChapter />
             <StoringUserDataChapter />
-            {/* [BIJAN] TODO: Add cookies chapter. */}
+            <CookiesChapter />
             <SignInChapter />
             <SignOutChapter />
             <SecurityConcernsChapter />
