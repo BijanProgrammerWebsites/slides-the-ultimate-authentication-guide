@@ -1,14 +1,14 @@
 import {ReactElement, ReactNode} from 'react';
 
 import type {Metadata} from 'next';
-import {Quicksand} from 'next/font/google';
+import {Work_Sans} from 'next/font/google';
 
 import RevealProvider from '@/providers/reveal.provider';
 
 import './globals.scss';
 import './reveal.scss';
 
-const quicksand = Quicksand({subsets: ['latin'], variable: '--font-quicksand'});
+const worksans = Work_Sans({subsets: ['latin'], variable: '--font-worksans'});
 
 export const metadata: Metadata = {
     title: 'The Ultimate Authentication Guide',
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({children}: Readonly<{children: ReactNode}>): ReactElement {
     return (
-        <html lang="en" className={quicksand.variable}>
+        <html lang="en" className={worksans.variable}>
             <body>
                 <RevealProvider>{children}</RevealProvider>
             </body>
