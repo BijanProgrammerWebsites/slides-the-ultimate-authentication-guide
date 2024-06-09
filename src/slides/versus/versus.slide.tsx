@@ -1,4 +1,4 @@
-import {ReactElement} from 'react';
+import {Fragment, ReactElement} from 'react';
 
 import BaseSlide, {BaseSlideProps} from '@/slides/base/base.slide';
 
@@ -19,11 +19,11 @@ export default function VersusSlide({columns, ...baseSlideProps}: Props): ReactE
         <BaseSlide {...baseSlideProps}>
             <div className={styles.versus}>
                 {columns.map((column, index) => (
-                    <div key={index} className={styles.column}>
+                    <Fragment key={index}>
                         <div className={styles.heading}>{column.heading}</div>
                         <img src={column.imageSrc} alt="" />
                         <p>{column.description}</p>
-                    </div>
+                    </Fragment>
                 ))}
             </div>
         </BaseSlide>
