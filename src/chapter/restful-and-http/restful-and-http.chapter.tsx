@@ -50,15 +50,15 @@ export default function RestfulAndHttpChapter(): ReactElement {
                 isAutoAnimated={true}
                 heading={heading}
                 imageSrc={indexHtmlImage.src}
-                caption="Sending index.html"
+                caption="Requesting index.html"
             />
             <ImageSlide
                 isAutoAnimated={true}
                 heading={heading}
                 imageSrc={resourcesImage.src}
-                caption="Sending Other Resources Like CSS, JS, Images, Fonts and ..."
+                caption="Requesting Other Resources Like CSS, JS, Images, Fonts and ..."
             />
-            <ImageSlide isAutoAnimated={true} heading={heading} imageSrc={fetchImage.src} caption="Fetch Requests" />
+            <ImageSlide isAutoAnimated={true} heading={heading} imageSrc={fetchImage.src} caption="Fetch & API" />
             <ImageSlide
                 isAutoAnimated={true}
                 heading={heading}
