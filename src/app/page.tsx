@@ -11,6 +11,7 @@ import SignUpChapter from '@/chapter/sign-up/sign-up.chapter';
 import StoringUserDataChapter from '@/chapter/storing-user-data/storing-user-data.chapter';
 import SignInChapter from '@/chapter/sign-in/sign-in.chapter';
 import SignOutChapter from '@/chapter/sign-out/sign-out.chapter';
+import SecurityConcernsChapter from '@/chapter/security-concerns/security-concerns.chapter';
 
 export default function Home(): ReactElement {
     return (
@@ -38,6 +39,7 @@ export default function Home(): ReactElement {
             {/* [BIJAN] TODO: Add cookies chapter. */}
             <SignInChapter />
             <SignOutChapter />
+            <SecurityConcernsChapter />
             <ClosingSlide />
         </>
     );
