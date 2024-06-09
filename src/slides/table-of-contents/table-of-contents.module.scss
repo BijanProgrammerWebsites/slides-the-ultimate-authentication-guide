@@ -23,7 +23,7 @@
         font-size: 1.4em;
 
         &::before {
-            content: counters(table-of-contents, ".") " ";
+            content: counters(table-of-contents, ".");
 
             counter-increment: table-of-contents;
 
@@ -36,7 +36,7 @@
 
             transform: translate(-40%, -60%);
 
-            font-size: 3em;
+            font-size: 2.4em;
             font-weight: 700;
         }
     }
