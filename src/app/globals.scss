@@ -39,24 +39,6 @@ ul {
         list-style: none;
 
         margin-block-end: 1rem;
-
-        &::before {
-            --size: 1.2em;
-
-            content: "";
-
-            background-image: url("../assets/icons/check-mark.png");
-            background-size: var(--size);
-
-            display: inline-block;
-
-            width: var(--size);
-            height: var(--size);
-
-            margin-inline-end: 0.5rem;
-
-            vertical-align: middle;
-        }
     }
 }
 
