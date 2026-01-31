@@ -9,4 +9,5 @@ jobs:
         uses: BijanProgrammerWebsites/hub/.github/workflows/deploy-nextjs.yml@master
         with:
             process-name: tuag
+            port: 3006
         secrets: inherit
