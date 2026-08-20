@@ -1,7 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     basePath: '/tuag',
-    output: 'standalone',
+    output: 'export',
+    images: {
+        unoptimized: true,
+    },
 };
 
 export default nextConfig;
